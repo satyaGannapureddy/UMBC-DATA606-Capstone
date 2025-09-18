@@ -1,4 +1,4 @@
-# Employment Fraud Detection System
+# Fake Job Posting Prediction
 
 **DATA 606**: Capstone Project  
 **Faculty**: Dr. Chaojie (Jay) Wang  
