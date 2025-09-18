@@ -23,7 +23,7 @@ Fake job postings can have serious consequences. Many scams are designed to stea
 ## Research Questions:  
 1. Can job posting text and metadata predict fraudulent postings?  
 2. Which features contribute most to distinguishing real job postings from fraudulent ones?
-3. To what extent can we reduce false positives in fake job posting detection without sacrificing detection accuracy?  
+3. How do fake job postings differ from real ones in terms of text length, salary ranges, and required qualifications? 
 
 ---
 
