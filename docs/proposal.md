@@ -41,6 +41,8 @@ Fake job postings can have serious consequences. Many scams are designed to stea
 | job_id              | int       | Unique identifier for job                     | 1, 2, 3...      |
 | title               | string    | Job title                                     | "Software Eng." |
 | location            | string    | Job location                                  | City, State     |
+| department          | string    | Department within the company                 | "Engineering", "Sales", ... |
+| salary_range        | string    | Salary range offered                           | "50k-70k", "100000+", "Negotiable" |
 | company_profile      | string    | Company description                          |text             |
 | description         | string    | Job description text                          |text             |
 | requirements        | string    | Job requirements                              |text             |
@@ -61,7 +63,13 @@ Fake job postings can have serious consequences. Many scams are designed to stea
 - **fraudulent** (binary: 0 = Real, 1 = Fake)
 
 ### Feature/Predictor Variables
-- Text features: `title`, `company_profile`, `description`, `requirements`, `benefits`  
-- Metadata: `telecommuting`, `has_company_logo`, `has_questions`, `employment_type`, `required_experience`, `required_education`, `industry`, `function`  
+
+All columns except `job_id` (identifier) and `fraudulent` (target) are used as predictors. Key features include:  
+
+- **Text fields**: title, company_profile, description, requirements, benefits  
+- **Categorical fields**: department, salary_range, employment_type, required_experience, required_education, industry, function, location  
+- **Binary fields**: telecommuting, has_company_logo, has_questions  
+
+
 
 
