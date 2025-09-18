@@ -18,7 +18,7 @@ Online job portals have become a primary channel for job seekers, but they are i
 This project addresses the problem by applying machine learning and natural language processing (NLP) techniques to a dataset of real and fake job postings. The challenge is unique because it combines structured metadata (e.g., telecommuting status, employment type, company logo) with unstructured text (e.g., descriptions, company profiles). The study aims to build models that not only predict fraudulent postings accurately but also highlight which features textual or metadata are most useful in detection.  
 
 ## Why does it matter?  
-Fake job postings can waste time, exploit job seekers, and cause financial or personal harm. Detecting them automatically can help protect users and recruiters.  
+Fake job postings can have serious consequences. Many scams are designed to steal personal information, leading to identity theft or financial loss, and they can leave job seekers emotionally drained. On the other side, genuine recruiters also suffer when their platforms are misused by fraudsters, as it damages their reputation. For job portals, the constant presence of fake listings erodes user trust and forces them to spend more on monitoring and security. That’s why building automated systems to detect these scams is so important—it protects job seekers, helps recruiters, and keeps online hiring platforms safe and reliable. 
 
 ## Research Questions:  
 1. Can job posting text and metadata predict fraudulent postings?  
