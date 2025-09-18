@@ -3,12 +3,11 @@
 **Prepared for**: UMBC Data Science Master’s Degree Capstone  
 **Advisor**: Dr. Chaojie (Jay) Wang  
 
-**Author**: Gannapureddy Charan Naga Sri Sai Satya  
+**Author**: Charan Naga Sri Sai Satya Gannapureddy 
 
 - **GitHub Repository**: [https://github.com/satyaGannapureddy/UMBC-DATA606-Capstone](https://github.com/satyaGannapureddy/UMBC-DATA606-Capstone)  
-- **LinkedIn Profile**: [Your LinkedIn Link]  
-- **PowerPoint Presentation**: [Link to PPT]  
-- **YouTube Video**: [Link to Demo]  
+- **LinkedIn Profile**: https://www.linkedin.com/in/satya-gannapureddy/
+  
 
 ---
 
