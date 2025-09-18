@@ -13,7 +13,7 @@
 
 ## 2. Background  
 
-Online job portals have become a primary channel for job seekers, but they are increasingly exploited by malicious actors who create fraudulent postings. These fake listings aim to steal sensitive information, lure applicants into scams, or extract money under false pretenses. Such scams can have severe consequences for individuals—financial loss, emotional stress, and legal risks—while also damaging the reputation of job platforms. Detecting fraudulent job postings is therefore not only a societal concern but also a critical challenge for industry stakeholders.
+Online job portals have become a primary channel for job seekers, but they are increasingly exploited by malicious actors who create fraudulent postings. These fake listings aim to steal sensitive information, lure applicants into scams, or extract money under false pretenses. Such scams can have severe consequences for individuals financial loss, emotional stress, and legal risks while also damaging the reputation of job platforms. Detecting fraudulent job postings is therefore not only a societal concern but also a critical challenge for industry stakeholders.
 
 This project addresses the problem by applying machine learning and natural language processing (NLP) techniques to a dataset of real and fake job postings. The challenge is unique because it combines structured metadata (e.g., telecommuting status, employment type, company logo) with unstructured text (e.g., descriptions, company profiles). The study aims to build models that not only predict fraudulent postings accurately but also highlight which features—textual or metadata—are most useful in detection.  
 
