@@ -64,7 +64,4 @@ Fake job postings can waste time, exploit job seekers, and cause financial or pe
 - Text features: `title`, `company_profile`, `description`, `requirements`, `benefits`  
 - Metadata: `telecommuting`, `has_company_logo`, `has_questions`, `employment_type`, `required_experience`, `required_education`, `industry`, `function`  
 
----
-
-(👉 You would continue with sections: Methodology, Models, Results, Conclusion, etc.)
 
