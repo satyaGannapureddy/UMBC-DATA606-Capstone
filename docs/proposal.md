@@ -1,7 +1,7 @@
 # Employment Fraud Detection System
 
-**Prepared for**: UMBC Data Science Master’s Degree Capstone  
-**Advisor**: Dr. Chaojie (Jay) Wang  
+**DATA 606**: Capstone Project  
+**Faculty**: Dr. Chaojie (Jay) Wang  
 
 **Author**: Charan Naga Sri Sai Satya Gannapureddy 
 
@@ -15,7 +15,7 @@
 
 Online job portals have become a primary channel for job seekers, but they are increasingly exploited by malicious actors who create fraudulent postings. These fake listings aim to steal sensitive information, lure applicants into scams, or extract money under false pretenses. Such scams can have severe consequences for individuals financial loss, emotional stress, and legal risks while also damaging the reputation of job platforms. Detecting fraudulent job postings is therefore not only a societal concern but also a critical challenge for industry stakeholders.
 
-This project addresses the problem by applying machine learning and natural language processing (NLP) techniques to a dataset of real and fake job postings. The challenge is unique because it combines structured metadata (e.g., telecommuting status, employment type, company logo) with unstructured text (e.g., descriptions, company profiles). The study aims to build models that not only predict fraudulent postings accurately but also highlight which features textual or metadata are most useful in detection.  
+This project addresses the problem by applying machine learning and natural language processing (NLP) techniques to a dataset of real and fake job postings.The study aims to build models that not only predict fraudulent postings accurately but also highlight which features textual or metadata are most useful in detection.  
 
 ## Why does it matter?  
 Fake job postings can have serious consequences. Many scams are designed to steal personal information, leading to identity theft or financial loss, and they can leave job seekers emotionally drained. On the other side, genuine recruiters also suffer when their platforms are misused by fraudsters, as it damages their reputation. For job portals, the constant presence of fake listings erodes user trust and forces them to spend more on monitoring and security. That’s why building automated systems to detect these scams is so important—it protects job seekers, helps recruiters, and keeps online hiring platforms safe and reliable. 
@@ -41,10 +41,10 @@ Fake job postings can have serious consequences. Many scams are designed to stea
 | job_id              | int       | Unique identifier for job                     | 1, 2, 3...      |
 | title               | string    | Job title                                     | "Software Eng." |
 | location            | string    | Job location                                  | City, State     |
-| company_profile      | string    | Company description                           | Free text       |
-| description         | string    | Job description text                          | Free text       |
-| requirements        | string    | Job requirements                              | Free text       |
-| benefits            | string    | Benefits listed                               | Free text       |
+| company_profile      | string    | Company description                          |text             |
+| description         | string    | Job description text                          |text             |
+| requirements        | string    | Job requirements                              |text             |
+| benefits            | string    | Benefits listed                               |text             |
 | telecommuting       | int       | 1 = remote, 0 = not remote                    | 0, 1            |
 | has_company_logo    | int       | Whether logo is present                       | 0, 1            |
 | has_questions       | int       | Whether application has screening questions   | 0, 1            |
