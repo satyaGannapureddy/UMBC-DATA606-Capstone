@@ -1,4 +1,4 @@
-# Fake Job Posting Prediction: A Machine Learning Approach
+# Employment Fraud Detection System
 
 **Prepared for**: UMBC Data Science Master’s Degree Capstone  
 **Advisor**: Dr. Chaojie (Jay) Wang  
