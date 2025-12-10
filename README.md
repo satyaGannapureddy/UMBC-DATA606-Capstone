@@ -9,9 +9,8 @@ Author: Charan Naga Sri Sai Satya Gannapureddy
 GitHub Repo: https://github.com/satyaGannapureddy/UMBC-DATA606-Capstone
 
 ## 1. Title and Author
-Project Title
 
-Fake Job Posting Detection Using NLP and Machine Learning
+# Fake Job Posting Detection Using NLP and Machine Learning
 
 Author
 
@@ -33,7 +32,7 @@ Online job portals such as LinkedIn, Indeed, and Naukri are increasingly targete
 
 This project uses NLP, Machine Learning, and LLM embeddings to automatically detect fraudulent job postings by analyzing text and metadata.
 
-Why This Problem Matters
+# Why This Problem Matters
 
 Prevents identity theft and financial loss
 
@@ -43,7 +42,7 @@ Helps job portals auto-flag suspicious listings
 
 Improves trust in online recruitment ecosystems
 
-Research Questions
+# Research Questions
 
 Can fake job postings be accurately classified using ML and NLP?
 
@@ -54,7 +53,7 @@ Which machine learning model performs best?
 What textual/metadata features best indicate fraud?
 
 ## 3. Data
-3.1 Data Source
+# 3.1 Data Source
 
 Dataset: Real or Fake Job Posting Prediction
 
@@ -62,7 +61,7 @@ Source: Kaggle
 
 Link: https://www.kaggle.com/shivamb/real-or-fake-fake-jobposting-prediction
 
-3.2 Dataset Description
+# 3.2 Dataset Description
 
 Size: ~17 MB
 
@@ -70,7 +69,7 @@ Shape: 17,880 rows × 18 columns
 
 Unit of Observation: Each row represents one job posting
 
-3.3 Data Structure
+# 3.3 Data Structure
 
 Includes:
 
@@ -82,7 +81,7 @@ Binary metadata: telecommuting, has_company_logo, has_questions
 
 Target label: fraudulent (1 = fake posting)
 
-3.4 Data Dictionary (Key Variables)
+# 3.4 Data Dictionary (Key Variables)
 Column	Type	Description
 title	text	Job title
 location	text	Location
@@ -109,7 +108,8 @@ Metadata: telecommuting, has_company_logo, has_questions
 One-hot encoded categorical variables
 
 ## 4. Exploratory Data Analysis (EDA)
-4.1 Data Cleaning
+
+# 4.1 Data Cleaning
 
 Removed duplicates
 
@@ -117,7 +117,7 @@ Replaced missing text with empty strings
 
 Lowercased text and removed noise (punctuation, symbols, HTML)
 
-4.2 Text Preprocessing
+# 4.2 Text Preprocessing
 
 Tokenization
 
@@ -129,7 +129,7 @@ TF-IDF for classical models
 
 SentenceTransformer embeddings for LLM models
 
-4.3 Class Imbalance Handling — SMOTE
+# 4.3 Class Imbalance Handling — SMOTE
 
 Real job postings massively outnumbered fraudulent ones
 
@@ -137,7 +137,7 @@ Applied SMOTE to oversample minority class
 
 Improved model recall and F1-score
 
-4.4 Categorical Encoding
+# 4.4 Categorical Encoding
 
 One-hot encoded:
 
@@ -149,7 +149,7 @@ employment_type
 
 country
 
-4.5 Key EDA Insights
+# 4.5 Key EDA Insights
 
 Fake jobs had vague descriptions
 
@@ -160,7 +160,8 @@ Used repetitive or generic wording
 Real postings were longer and more detailed
 
 ## 5. Model Training
-5.1 Models Implemented
+
+# 5.1 Models Implemented
 Baseline Models (TF-IDF)
 
 Naive Bayes
@@ -181,7 +182,7 @@ Random Forest
 
 XGBoost (Best model)
 
-5.2 LLM Embedding Approach
+# 5.2 LLM Embedding Approach
 
 Used SentenceTransformer: all-MiniLM-L6-v2
 
@@ -189,13 +190,13 @@ Generates 384-dimensional embeddings
 
 Captures semantic meaning better than TF-IDF
 
-5.3 Train–Test Split
+# 5.3 Train–Test Split
 
 80/20 split
 
 Stratified to preserve fraud ratio
 
-5.4 Evaluation Metrics
+# 5.4 Evaluation Metrics
 
 Accuracy
 
@@ -209,7 +210,7 @@ Confusion Matrix
 
 ROC-AUC
 
-5.5 Best Model
+# 5.5 Best Model
 ⭐ XGBoost + LLM Embeddings
 
 Highest accuracy
@@ -219,7 +220,8 @@ Best recall (important for fraud detection)
 Most robust across varied text
 
 ## 6. Application of the Trained Model
-6.1 Streamlit Web App
+
+#6.1 Streamlit Web App
 
 A real-time Streamlit app was created.
 
@@ -233,7 +235,7 @@ XGBoost predicts fraud probability
 
 App displays classification + confidence
 
-6.2 Use Cases
+# 6.2 Use Cases
 
 Job portals (auto-flag risky postings)
 
@@ -284,7 +286,7 @@ Expand dataset via live scraping
 
 Add multilingual support
 
-8. References
+## 8. References
 
 Kaggle Fake Job Posting Dataset
 
