@@ -1,6 +1,5 @@
 # UMBC-DATA606-Capstone
 
-Final Capstone Report
 Fake Job Posting Detection Using NLP, LLM Embeddings, and Machine Learning
 
 Prepared for: UMBC Data Science Master’s Degree Capstone
@@ -12,11 +11,7 @@ GitHub Repo: https://github.com/satyaGannapureddy/UMBC-DATA606-Capstone
 
 ## Fake Job Posting Detection Using NLP and Machine Learning
 
-Author
-
 Charan Naga Sri Sai Satya Gannapureddy
-
-Links
 
 GitHub Repository: https://github.com/satyaGannapureddy/UMBC-DATA606-Capstone
 
