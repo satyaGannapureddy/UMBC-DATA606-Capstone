@@ -8,7 +8,7 @@ Instructor: Dr. Chaojie (Jay) Wang
 Author: Charan Naga Sri Sai Satya Gannapureddy
 GitHub Repo: https://github.com/satyaGannapureddy/UMBC-DATA606-Capstone
 
-1. Title and Author
+## 1. Title and Author
 Project Title
 
 Fake Job Posting Detection Using NLP and Machine Learning
@@ -27,7 +27,7 @@ PowerPoint Presentation: add link
 
 YouTube Presentation: add link
 
-2. Background
+## 2. Background
 
 Online job portals such as LinkedIn, Indeed, and Naukri are increasingly targeted by scammers who post fraudulent job listings. These scams steal personal information or money and cause significant harm to job seekers.
 
@@ -53,7 +53,7 @@ Which machine learning model performs best?
 
 What textual/metadata features best indicate fraud?
 
-3. Data
+## 3. Data
 3.1 Data Source
 
 Dataset: Real or Fake Job Posting Prediction
@@ -108,7 +108,7 @@ Metadata: telecommuting, has_company_logo, has_questions
 
 One-hot encoded categorical variables
 
-4. Exploratory Data Analysis (EDA)
+## 4. Exploratory Data Analysis (EDA)
 4.1 Data Cleaning
 
 Removed duplicates
@@ -159,7 +159,7 @@ Used repetitive or generic wording
 
 Real postings were longer and more detailed
 
-5. Model Training
+## 5. Model Training
 5.1 Models Implemented
 Baseline Models (TF-IDF)
 
@@ -218,7 +218,7 @@ Best recall (important for fraud detection)
 
 Most robust across varied text
 
-6. Application of the Trained Model
+## 6. Application of the Trained Model
 6.1 Streamlit Web App
 
 A real-time Streamlit app was created.
@@ -243,7 +243,7 @@ Recruiters (validate external postings)
 
 Job seekers (self-check job authenticity)
 
-7. Conclusion
+## 7. Conclusion
 Summary of Results
 
 Machine learning can accurately identify fake job postings
