@@ -167,49 +167,65 @@ Text preprocessing included lowercasing, removing punctuation, removing stopword
 
 Below are the visualizations included as part of EDA:
 
-Class Imbalance
+#### Class Imbalance
+
+
 <img src="docs/class imblance.png">
 
 
 Fake postings make up only about 4.8% of all listings, indicating a strong class imbalance that requires oversampling (SMOTE).
 
-Binary Metadata Distributions
+#### Binary Metadata Distributions
+
+
 <img src="docs/meta data distributions.png">
 
 
 These plots show that fake postings rarely include company logos and often skip screening questions, whereas legitimate postings usually provide them.
 
-Job Function Distribution
+#### Job Function Distribution
+
+
 <img src="docs/Job Function Distribution.png">
 
 
 The majority of postings belong to “Unknown” or broad categories like IT and Sales; many categories appear infrequently.
 
-Correlation Heatmap
+#### Correlation Heatmap
+
+
 <img src="docs/heatmap.png">
 
 
 The heatmap shows that has_company_logo has a noticeable negative correlation with fraud, while has_questions has a slight positive association with real postings.
 
-Country Distribution
+#### Country Distribution
+
+
 <img src="docs/Country Distribution.png">
 
 
 Most postings originate from the US, followed by GB and GR; other countries appear sparsely.
 
-Word Count in Job Descriptions
+#### Word Count in Job Descriptions
+
+
 <img src="docs/Word Count in Job Descriptions.png">
 
 
 Real postings generally contain longer descriptions compared to fake postings, which helps models differentiate them.
 
-Character Count in Job Descriptions
+#### Character Count in Job Descriptions
+
+
 <img src="docs/Character Count in Job Descriptions.png">
 
 
 Real postings show a wide spread of character counts, while fake postings cluster at low values.
 
-Word Cloud of Common Terms
+#### Word Cloud of Common Terms
+
+
 <img src="docs/word count.png">
 
 
