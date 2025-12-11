@@ -109,51 +109,51 @@ The following features were used to build the machine learning models:
 
 A unified text field created by merging and preprocessing:
 
-title
++ title
 
-company_profile
++ company_profile
 
-description
++ description
 
-requirements
++ requirements
 
-benefits
++ benefits
 
 This text was later converted into:
 
-TF-IDF vectors (for classical models)
++ TF-IDF vectors (for classical models)
 
-LLM embeddings (MiniLM-L6-v2)
++ LLM embeddings (MiniLM-L6-v2)
 
 #### 2. Metadata Features
 
 These binary and numeric fields provide structural information:
 
-telecommuting
++ telecommuting
 
-has_company_logo
++ has_company_logo
 
-has_questions
++ has_questions
 
 #### 3. One-Hot Encoded Categorical Variables
 
 Converted into numerical format to support ML models:
 
-employment_type
++ employment_type
 
-salary_range
++ salary_range
 
-department
++ department
 
-industry
++ industry
 
-required_education
++ required_education
 
-required_experience
++ required_experience
 
-function
++ function
 
-country (from location)
++ country (from location)
 
 # 4. Exploratory Data Analysis (EDA)
 
