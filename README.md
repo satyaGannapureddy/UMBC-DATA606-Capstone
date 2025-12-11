@@ -157,55 +157,55 @@ Converted into numerical format to support ML models:
 
 # 4. Exploratory Data Analysis (EDA)
 
-## 4.1 Data Cleaning
+The exploratory data analysis was performed in Jupyter Notebook to understand the structure, quality, and behavior of the Fake Job Posting dataset before applying machine learning. The dataset contains 17,880 job postings with 18 columns, including text fields, categorical variables, and binary indicators. For analysis, we focused on the target variable fraudulent and a selected set of features such as description, title, company_profile, requirements, benefits, telecommuting, has_company_logo, has_questions, employment_type, salary_range, required_experience, required_education, industry, and function. These variables were retained because they provide meaningful signals for fraud detection, while unrelated identifiers were dropped.
 
-Removed duplicates
+Initial summary statistics revealed that real job postings tend to contain longer, richer text descriptions, while fake postings often provide vague or short descriptions. Binary metadata showed useful patterns: for example, fake postings rarely include company logos, and they also tend not to ask screening questions, suggesting weaker legitimacy signals. Categorical variables such as job function, industry, and employment type exhibited substantial imbalance, and many missing entries were consolidated under “Unknown” to maintain data integrity.
 
-Replaced missing text with empty strings
+Data cleaning involved handling missing values—text fields were filled with empty strings, and categorical fields were assigned “Unknown.” Duplicate rows were checked and removed when present. No merging, pivoting, or external datasets were required because the dataset is self-contained for the prediction task. The location field was split to extract the country component, enabling basic geographic distribution analysis. After preprocessing, the dataset was made “tidy”: each row represents a single job posting, and each column represents one unique attribute of that posting.
 
-Lowercased text and removed noise (punctuation, symbols, HTML)
+Text preprocessing included lowercasing, removing punctuation, removing stopwords, tokenizing, and lemmatizing. A combined cleaned text feature was created by merging multiple text fields (title, description, requirements, etc.), which was later vectorized using TF-IDF and LLM embeddings.
 
-## 4.2 Text Preprocessing
+Below are the visualizations included as part of EDA:
 
-Tokenization
+Class Imbalance
+<img src="C:\Users\satya\OneDrive\Pictures\Screenshots\Screenshot 2025-12-11 163405.png" width="500">
 
-Stopword removal
+Fake postings make up only about 4.8% of all listings, indicating a strong class imbalance that requires oversampling (SMOTE).
 
-Lemmatization
+Binary Metadata Distributions
+<img src="C:\Users\satya\OneDrive\Pictures\Screenshots\Screenshot 2025-12-11 163421.png">
 
-TF-IDF for classical models
+These plots show that fake postings rarely include company logos and often skip screening questions, whereas legitimate postings usually provide them.
 
-SentenceTransformer embeddings for LLM models
+Job Function Distribution
+<img src="your-image-path-here">
 
-## 4.3 Class Imbalance Handling — SMOTE
+The majority of postings belong to “Unknown” or broad categories like IT and Sales; many categories appear infrequently.
 
-Real job postings massively outnumbered fraudulent ones
+Correlation Heatmap
+<img src="your-image-path-here">
 
-Applied SMOTE to oversample minority class
+The heatmap shows that has_company_logo has a noticeable negative correlation with fraud, while has_questions has a slight positive association with real postings.
 
-Improved model recall and F1-score
+Country Distribution
+<img src="your-image-path-here">
 
-## 4.4 Categorical Encoding
+Most postings originate from the US, followed by GB and GR; other countries appear sparsely.
 
-One-hot encoded:
+Word Count in Job Descriptions
+<img src="your-image-path-here">
 
-department
+Real postings generally contain longer descriptions compared to fake postings, which helps models differentiate them.
 
-salary_range
+Character Count in Job Descriptions
+<img src="your-image-path-here">
 
-employment_type
+Real postings show a wide spread of character counts, while fake postings cluster at low values.
 
-country
+Word Cloud of Common Terms
+<img src="your-image-path-here">
 
-## 4.5 Key EDA Insights
-
-Fake jobs had vague descriptions
-
-Often lacked company logos
-
-Used repetitive or generic wording
-
-Real postings were longer and more detailed
+The word cloud reveals recurring words such as communication, experience, customer service, and full time, suggesting typical job-related terminology.
 
 # 5. Model Training
 
