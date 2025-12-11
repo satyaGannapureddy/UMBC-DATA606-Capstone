@@ -105,7 +105,7 @@ fraudulent
 
 The following features were used to build the machine learning models:
 
-1. Combined Cleaned Text
+#### 1. Combined Cleaned Text
 
 A unified text field created by merging and preprocessing:
 
@@ -125,7 +125,7 @@ TF-IDF vectors (for classical models)
 
 LLM embeddings (MiniLM-L6-v2)
 
-2. Metadata Features
+#### 2. Metadata Features
 
 These binary and numeric fields provide structural information:
 
@@ -135,7 +135,7 @@ has_company_logo
 
 has_questions
 
-3. One-Hot Encoded Categorical Variables
+#### 3. One-Hot Encoded Categorical Variables
 
 Converted into numerical format to support ML models:
 
@@ -154,6 +154,7 @@ required_experience
 function
 
 country (from location)
+
 # 4. Exploratory Data Analysis (EDA)
 
 ## 4.1 Data Cleaning
