@@ -78,31 +78,82 @@ Binary metadata: telecommuting, has_company_logo, has_questions
 Target label: fraudulent (1 = fake posting)
 
 ## 3.4 Data Dictionary (Key Variables)
-Column	Type	Description
-title	text	Job title
-location	text	Location
-company_profile	text	Company description
-description	text	Main job description
-requirements	text	Required skills
-benefits	text	Benefits offered
-telecommuting	binary	Remote job (1 = yes)
-has_company_logo	binary	Posting includes logo
-has_questions	binary	Screening questions included
-employment_type	categorical	Job type
-salary_range	categorical	Pay info
-fraudulent	binary	Target variable
-Target Variable
+| **Column Name**      | **Type**     | **Description**                                     |
+| -------------------- | ------------ | --------------------------------------------------- |
+| **title**            | text         | Job title                                           |
+| **location**         | text         | Geographic location of the job                      |
+| **company_profile**  | text         | Description of the hiring company                   |
+| **description**      | text         | Main body text describing the job                   |
+| **requirements**     | text         | Required skills, qualifications, and experience     |
+| **benefits**         | text         | Benefits offered by the employer                    |
+| **telecommuting**    | binary (0/1) | Whether the job is remote (1 = yes, 0 = no)         |
+| **has_company_logo** | binary (0/1) | Whether the posting includes a company logo         |
+| **has_questions**    | binary (0/1) | Whether screening questions were included           |
+| **employment_type**  | categorical  | Nature of employment (FT, PT, Contract, Temporary)  |
+| **salary_range**     | categorical  | Salary information provided in text format          |
+| **fraudulent**       | binary (0/1) | **Target variable**: 1 = Fake job posting, 0 = Real |
 
-fraudulent — indicates whether the job posting is real or fake.
+### Target Variable
+fraudulent
+  Binary classification label
 
-Selected Features
+  1 = Fake job posting
 
-Combined cleaned text
+  0 = Real job posting
 
-Metadata: telecommuting, has_company_logo, has_questions
+### Selected Features
 
-One-hot encoded categorical variables
+The following features were used to build the machine learning models:
 
+1. Combined Cleaned Text
+
+A unified text field created by merging and preprocessing:
+
+title
+
+company_profile
+
+description
+
+requirements
+
+benefits
+
+This text was later converted into:
+
+TF-IDF vectors (for classical models)
+
+LLM embeddings (MiniLM-L6-v2)
+
+2. Metadata Features
+
+These binary and numeric fields provide structural information:
+
+telecommuting
+
+has_company_logo
+
+has_questions
+
+3. One-Hot Encoded Categorical Variables
+
+Converted into numerical format to support ML models:
+
+employment_type
+
+salary_range
+
+department
+
+industry
+
+required_education
+
+required_experience
+
+function
+
+country (from location)
 # 4. Exploratory Data Analysis (EDA)
 
 ## 4.1 Data Cleaning
