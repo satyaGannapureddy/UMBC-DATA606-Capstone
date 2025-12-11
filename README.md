@@ -95,11 +95,11 @@ Target label: fraudulent (1 = fake posting)
 
 ### Target Variable
 fraudulent
-  Binary classification label
+  + Binary classification label
 
-  1 = Fake job posting
+   + 1 = Fake job posting
 
-  0 = Real job posting
+   + 0 = Real job posting
 
 ### Selected Features
 
