@@ -168,7 +168,7 @@ Text preprocessing included lowercasing, removing punctuation, removing stopword
 Below are the visualizations included as part of EDA:
 
 Class Imbalance
-<img src="C:\Users\satya\OneDrive\Pictures\Screenshots\Screenshot 2025-12-11 163405.png" width="500">
+<img src="docs/class imblance.png" width="500">
 
 Fake postings make up only about 4.8% of all listings, indicating a strong class imbalance that requires oversampling (SMOTE).
 
