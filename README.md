@@ -279,9 +279,11 @@ While accuracy alone doesn't tell the full story—especially in an imbalanced d
 
 <img src="docs/marco F1.png"> 
 
-The macro-F1 visualization further demonstrated that LLM-based models perform more consistently across both classes.
-The confusion matrices for all three LLM-based models clearly show significantly fewer false negatives and more reliable identification of fraudulent postings.
+The Macro-F1 chart provides a more meaningful comparison of model performance on this imbalanced dataset by averaging the F1-scores of both classes equally. Unlike accuracy, which can appear high even when the model fails on the minority class, the Macro-F1 score highlights how well each model balances precision and recall for both real and fraudulent job postings.
 
+From the results, LLM + XGBoost stands out with the highest Macro-F1 score of 0.829, showing that it is the most effective at identifying both legitimate and fraudulent postings without being overly biased toward the majority class. Random Forest (0.752) and Logistic Regression (0.741) also perform well, but both fall behind XGBoost in terms of capturing fraud cases reliably.
+
+Overall, this comparison confirms that LLM embeddings significantly improve the models’ ability to detect fraudulent postings, and XGBoost benefits the most from these richer text representations. This makes LLM + XGBoost the strongest model not only in accuracy but also in balanced performance across both classes.
 
 
 # 6. Application of the Trained Model
