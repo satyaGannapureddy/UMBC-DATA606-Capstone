@@ -236,42 +236,42 @@ To build a predictive system for identifying fake job postings, several machine 
 
 Python libraries including scikit-learn, NLTK, spaCy, XGBoost, pandas, NumPy, and Matplotlib were used for preprocessing, modeling, and visualization. All model development was carried out in a Jupyter Notebook environment running locally. After observing limitations in TF-IDF models—particularly in detecting the minority (fraudulent) class—the pipeline was extended using SentenceTransformer embeddings (all-MiniLM-L6-v2). This embedding model generates 384-dimensional contextual vectors that capture richer semantic meaning compared to TF-IDF.
 
-📌 INSERT IMAGE HERE — “Comparison of Model Accuracies (TF-IDF Models)”
+##### Comparison of Model Accuracies (TF-IDF Models)
 
-Replace with:
 
-![TF-IDF Model Accuracies](your_image_link_here)
+<img src="docs/model accuarices.png">
 
 
 These embeddings, combined with metadata features, were then used to train Logistic Regression, Random Forest, and XGBoost again. This yielded dramatically improved performance across almost every metric compared to TF-IDF models.
 
 To better understand how each model performed internally, confusion matrix components (TP, FP, TN, FN) were analyzed to quantify how often models correctly identified fraudulent postings versus how often they missed them.
 
-📌 INSERT IMAGE HERE — “Confusion Matrix Components Comparison (TF-IDF Models)”
-![Confusion Matrix Components](your_image_link_here)
+##### Confusion Matrix Components Comparison (TF-IDF Models)
 
+
+<img src="docs/Confusion matrix.png">
 
 Model evaluation relied on metrics appropriate for imbalanced classification, including precision, recall, F1-score, accuracy, macro-averages, and confusion matrix interpretation. The TF-IDF models achieved reasonable accuracy (0.86–0.89), but their ability to identify fraudulent postings was weak—F1-scores for class 1 were often below 0.40.
 
 When LLM embeddings were introduced, performance increased significantly. Logistic Regression and Random Forest with embeddings achieved accuracies around 0.97, while LLM + XGBoost emerged as the best model, reaching 97.53% accuracy, 0.829 macro-F1, and the strongest balance between detecting real and fraudulent postings.
 
-📌 INSERT IMAGE HERE — “Accuracy by Model (LLM Embeddings)”
-![LLM Accuracy Comparison](your_image_link_here)
+##### Accuracy by Model (LLM Embeddings)
 
 
-The macro-F1 visualization further demonstrated that LLM-based models perform more consistently across both classes.
-
-📌 INSERT IMAGE HERE — “Macro-F1 by Model (LLM Embeddings)”
-![LLM Macro F1](your_image_link_here)
-
-
-The confusion matrices for all three LLM-based models clearly show significantly fewer false negatives and more reliable identification of fraudulent postings.
-
-📌 INSERT IMAGE HERE — “LLM Model Evaluation Screenshots (Logistic, RF, XGBoost)”
-![LLM Model Evaluations](your_image_link_here)
-
+<img src="docs/accuracy by model.png">
 
 Through systematic experimentation, visual comparison, and metric-driven evaluation, embedding-based XGBoost was selected as the final model due to its superior balance of precision, recall, F1-score, and overall accuracy.
+
+
+##### Macro-F1 by Model (LLM Embeddings)
+
+
+<img src="docs/marco F1.png"> 
+
+The macro-F1 visualization further demonstrated that LLM-based models perform more consistently across both classes.
+The confusion matrices for all three LLM-based models clearly show significantly fewer false negatives and more reliable identification of fraudulent postings.
+
+
 
 # 6. Application of the Trained Model
 
