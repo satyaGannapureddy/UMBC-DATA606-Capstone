@@ -268,8 +268,11 @@ Among the TF-IDF models, XGBoost and Logistic Regression strike the best balance
 
 <img src="docs/accuracy by model.png">
 
-Through systematic experimentation, visual comparison, and metric-driven evaluation, embedding-based XGBoost was selected as the final model due to its superior balance of precision, recall, F1-score, and overall accuracy.
+This chart compares the accuracy of three machine learning models—XGBoost, Random Forest, and Logistic Regression—after replacing traditional TF-IDF features with LLM-generated embeddings (MiniLM-L6-v2). The improvement is immediately visible. All three models achieve accuracy scores above 96%, with LLM + XGBoost performing the best at 97.5%.
 
+Compared to the earlier TF-IDF models, which topped out around 89%, this represents a major performance boost. The reason is that LLM embeddings capture deeper semantic meaning from the job descriptions, allowing the models to better differentiate between subtle patterns in real vs. fraudulent postings.
+
+While accuracy alone doesn't tell the full story—especially in an imbalanced dataset—this plot demonstrates how switching to LLM-based features significantly enhances the model's overall predictive capability. The consistently high accuracy across all three models also shows that embedding-based representations provide a strong universal foundation, regardless of the classifier used.
 
 ##### Macro-F1 by Model (LLM Embeddings)
 
