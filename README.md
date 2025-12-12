@@ -255,9 +255,13 @@ Overall, this comparison highlights that while TF-IDF models perform reasonably 
 
 <img src="docs/Confusion matrix.png">
 
-Model evaluation relied on metrics appropriate for imbalanced classification, including precision, recall, F1-score, accuracy, macro-averages, and confusion matrix interpretation. The TF-IDF models achieved reasonable accuracy (0.86–0.89), but their ability to identify fraudulent postings was weak—F1-scores for class 1 were often below 0.40.
+This chart provides a deeper look at how each TF-IDF model performs by breaking down the confusion matrix components: true positives (TP), false positives (FP), true negatives (TN), and false negatives (FN). This view is especially important for fraud detection because accuracy alone can hide how poorly a model identifies the minority class.
 
-When LLM embeddings were introduced, performance increased significantly. Logistic Regression and Random Forest with embeddings achieved accuracies around 0.97, while LLM + XGBoost emerged as the best model, reaching 97.53% accuracy, 0.829 macro-F1, and the strongest balance between detecting real and fraudulent postings.
+A clear pattern emerges across the models. Naive Bayes performs the worst, producing a very high number of false positives and very few true positives. This means it incorrectly flags many real job postings as fake while still missing most of the actual fraudulent ones.
+
+The other models—KNN, Logistic Regression, Random Forest, and XGBoost—show much stronger performance by correctly identifying a large number of true negatives (TN), which is expected given the dataset imbalance. However, the real test is how well they detect fraudulent postings. While these models do capture more true positives (TP) than Naive Bayes, they still produce a significant number of false negatives (FN), meaning many fake postings go undetected.
+
+Among the TF-IDF models, XGBoost and Logistic Regression strike the best balance, showing relatively higher true positive counts and fewer false negatives compared to the others. Still, the chart makes it clear that all traditional models struggle with identifying fraud effectively, reinforcing the need for improved text representations—such as LLM embeddings—to boost fraud detection performance.
 
 ##### Accuracy by Model (LLM Embeddings)
 
