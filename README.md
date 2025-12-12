@@ -242,9 +242,13 @@ Python libraries including scikit-learn, NLTK, spaCy, XGBoost, pandas, NumPy, an
 <img src="docs/model accuarices.png">
 
 
-These embeddings, combined with metadata features, were then used to train Logistic Regression, Random Forest, and XGBoost again. This yielded dramatically improved performance across almost every metric compared to TF-IDF models.
+The bar chart shows how five traditional machine learning models performed when trained using TF-IDF features. There is a noticeable difference between the simpler models and the more advanced ones. Naive Bayes clearly struggles, reaching only about 39% accuracy, which suggests that it cannot capture the complexity and variability of job-posting text.
 
-To better understand how each model performed internally, confusion matrix components (TP, FP, TN, FN) were analyzed to quantify how often models correctly identified fraudulent postings versus how often they missed them.
+The other models — KNN, Logistic Regression, Random Forest, and XGBoost — perform much better, all landing in the 85% to 89% accuracy range. Among them, Random Forest (0.895) and KNN (0.893) come out on top, with Logistic Regression and XGBoost close behind. These results show that traditional ML models can learn meaningful patterns from the text, but they still face challenges.
+
+Even though the accuracies look relatively high, the dataset is highly imbalanced, with real postings vastly outnumbering fake ones. Because of this imbalance, accuracy alone doesn’t tell the whole story. Many of these models still miss a large portion of fraudulent postings, which becomes clearer when we look at recall and F1-scores later.
+
+Overall, this comparison highlights that while TF-IDF models perform reasonably well on surface-level accuracy, more advanced text representations — such as LLM-based embeddings — are necessary to truly improve the detection of fake job postings.
 
 ##### Confusion Matrix Components Comparison (TF-IDF Models)
 
