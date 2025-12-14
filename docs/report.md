@@ -295,7 +295,7 @@ The app supports single job predictions through a user-friendly form interface. 
 
 The model outputs both a binary classification (Fraudulent / Not Fraudulent) and a fraud probability score, giving users a clear and interpretable result rather than just a yes-or-no answer.
 
-<img src="docs/marco F1.png"> 
+<img src="images/streamlit-1.png"> 
 
 After prediction, the application displays the result prominently, highlighting whether the job posting is considered fraudulent. A confidence score (fraud probability) is also shown, helping users understand how strongly the model believes in its prediction. The model configuration used for prediction—LLM embeddings (MiniLM-L6-v2) combined with XGBoost—is clearly mentioned for transparency.
 
