@@ -289,69 +289,50 @@ Overall, this comparison confirms that LLM embeddings significantly improve the 
 # 6. Application of the Trained Model
 
 ## 6.1 Streamlit Web App
+To make the fraud detection system practical and easy to use, a real-time web application was developed using Streamlit. The application allows users to interact directly with the trained LLM + XGBoost model and receive instant predictions on whether a job posting is likely to be fraudulent.
 
-A real-time Streamlit app was created.
+The app supports single job predictions through a user-friendly form interface. Users can enter key job-related information such as location, department, salary range, employment type, and the full job description text. Additional metadata fields like telecommuting status, presence of a company logo, and screening questions can also be selected. Once the user clicks the Predict button, the input text is preprocessed and converted into LLM embeddings, combined with encoded metadata, and passed to the trained XGBoost classifier.
 
-Users can:
+The model outputs both a binary classification (Fraudulent / Not Fraudulent) and a fraud probability score, giving users a clear and interpretable result rather than just a yes-or-no answer.
 
-Paste a job description
+<img src="docs/marco F1.png"> 
 
-Model preprocesses & embeds text
+After prediction, the application displays the result prominently, highlighting whether the job posting is considered fraudulent. A confidence score (fraud probability) is also shown, helping users understand how strongly the model believes in its prediction. The model configuration used for prediction—LLM embeddings (MiniLM-L6-v2) combined with XGBoost—is clearly mentioned for transparency.
 
-XGBoost predicts fraud probability
-
-App displays classification + confidence
+<img src="docs/marco F1.png"> 
 
 ## 6.2 Use Cases
 
-Job portals (auto-flag risky postings)
+This application demonstrates how machine learning models can be translated into real-world tools with meaningful impact. Potential use cases include:
 
-Universities (protect students from scam listings)
+Job portals: Automatically flag suspicious job postings before they reach users
 
-Recruiters (validate external postings)
+Universities: Protect students from scam listings targeting early-career job seekers
 
-Job seekers (self-check job authenticity)
+Recruiters: Verify the legitimacy of external job postings shared on platforms
+
+Job seekers: Independently check the authenticity of job postings before applying
+
+Overall, the Streamlit application bridges the gap between model development and real-world usability, showcasing how advanced NLP and machine learning techniques can be deployed as an accessible and practical solution for fraud detection.
 
 # 7. Conclusion
-Summary of Results
+### 7.1 Project Summary & Impact
 
-Machine learning can accurately identify fake job postings
+This project focused on detecting fraudulent job postings using machine learning and natural language processing techniques. By analyzing both textual job descriptions and structured metadata, the study demonstrated that machine learning models can effectively distinguish between real and fake job postings. While traditional TF-IDF–based models achieved reasonable accuracy, they struggled with identifying fraudulent postings due to strong class imbalance.
 
-LLM embeddings significantly improved accuracy
+The introduction of LLM-based embeddings significantly improved model performance by capturing deeper semantic meaning in job descriptions. Among all approaches tested, XGBoost combined with LLM embeddings produced the strongest and most balanced results, achieving high accuracy and Macro-F1 scores. The final Streamlit application further translated this model into a practical tool that allows users to assess job postings in real time, helping protect job seekers, educational institutions, and recruiting platforms from online scams.
 
-XGBoost was the best-performing model
+### 7.2 Limitations
 
-Textual content is the strongest predictor
+Despite its strong performance, this project has several limitations. The dataset used may not fully reflect modern or evolving scam strategies, as fraudulent job postings continuously adapt to bypass detection systems. Additionally, the analysis was restricted to English-language postings, limiting its applicability to global job markets. Computational constraints also prevented fine-tuning large transformer models such as BERT or RoBERTa, which may have yielded further improvements in performance.
 
-Limitations
+### 7.3 Lessons Learned
 
-Dataset may not reflect current scam trends
+This project highlighted several important lessons in applied machine learning. Handling class imbalance using techniques such as SMOTE was critical for improving fraud detection performance. The results clearly demonstrated the advantages of LLM embeddings over traditional TF-IDF representations for text-heavy classification tasks. Careful text preprocessing and feature engineering played a major role in model reliability, and deploying the final model using Streamlit showed how quickly machine learning research can be converted into a usable, real-world application.
 
-Only English-language data used
+### 7.4 Future Directions
 
-No deep transformer fine-tuning due to compute limits
-
-Lessons Learned
-
-Importance of class balancing (SMOTE)
-
-Advantages of LLM embeddings in NLP tasks
-
-Need for thorough preprocessing
-
-Streamlit enables fast, simple deployment
-
-Future Work
-
-Use BERT / RoBERTa for deeper semantic understanding
-
-Add model explainability (SHAP, LIME)
-
-Deploy via REST API
-
-Expand dataset via live scraping
-
-Add multilingual support
+Future work could focus on incorporating transformer-based models such as BERT or RoBERTa for deeper semantic understanding of job descriptions. Adding model explainability tools like SHAP or LIME would improve transparency and trust in predictions. Deploying the system as a REST API would enable easier integration with job portals and external applications. Expanding the dataset through live job scraping and supporting multilingual job postings would further enhance the system’s robustness and real-world impact.
 
 # 8. References
 
