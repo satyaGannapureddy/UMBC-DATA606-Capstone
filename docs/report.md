@@ -336,8 +336,15 @@ Future work could focus on incorporating transformer-based models such as BERT o
 
 # 8. References
 
-Kaggle Fake Job Posting Dataset
+## 8. References
 
-Scikit-learn Documentation
+- scikit-learn Documentation  
+- Streamlit Documentation  
+- Plotly Express Documentation  
+- SentenceTransformers Documentation  
+- XGBoost Documentation  
+- Kaggle – Real or Fake Job Posting Dataset  
+- Python pandas Documentation  
+- NLTK Documentation  
+- spaCy Documentation  
 
-SentenceTransformers Documentation
