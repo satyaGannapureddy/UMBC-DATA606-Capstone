@@ -3,9 +3,10 @@
 Fake Job Posting Detection Using NLP, LLM Embeddings, and Machine Learning
 
 Prepared for: UMBC Data Science Master’s Degree Capstone
+
 Instructor: Dr. Chaojie (Jay) Wang
+
 Author: Charan Naga Sri Sai Satya Gannapureddy
-GitHub Repo: https://github.com/satyaGannapureddy/UMBC-DATA606-Capstone
 
 
 # Fake Job Posting Detection Using NLP and Machine Learning
