@@ -23,9 +23,9 @@ YouTube Presentation: add link
 
 # 2. Background
 
-Online job portals such as LinkedIn, Indeed, and Naukri are increasingly targeted by scammers who post fraudulent job listings. These fake postings are often designed to steal personal information, demand payments, or commit identity theft, causing financial and emotional harm to job seekers. As online recruitment continues to grow, manually identifying such scams has become difficult due to the large volume of job postings and the evolving nature of fraud tactics.
+Online job portals such as LinkedIn, Indeed, and Naukri have become essential platforms for connecting employers with job seekers. However, these platforms are increasingly exploited by scammers who post fraudulent job listings that appear legitimate. Such scams often aim to steal personal information, collect upfront payments, or conduct identity theft, resulting in significant financial and emotional harm to job seekers. As the volume of online job postings continues to grow, manually identifying fraudulent listings becomes increasingly challenging. Additionally, scammers continuously adapt their language and tactics, making rule-based detection methods ineffective. This highlights the need for automated, data-driven approaches to fraud detection.
 
-This project applies Natural Language Processing (NLP), machine learning, and LLM-based embeddings to automatically detect fraudulent job postings by analyzing both textual content and structured metadata, enabling a scalable and effective fraud detection solution.
+This project leverages Natural Language Processing (NLP), machine learning, and Large Language Model (LLM) embeddings to automatically identify fake job postings. By analyzing both textual content—such as job descriptions and requirements—and structured metadata like company logos and employment details, the system learns patterns that distinguish real postings from fraudulent ones. The use of LLM embeddings enables deeper semantic understanding of job text, improving detection accuracy. Overall, the approach provides a scalable and practical solution to enhance trust and safety in online recruitment platforms.
 
 ## Why This Problem Matters
 
