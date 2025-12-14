@@ -24,28 +24,28 @@ YouTube Presentation: add link
 # 2. Background
 
 Online job portals such as LinkedIn, Indeed, and Naukri have become essential platforms for connecting employers with job seekers. However, these platforms are increasingly exploited by scammers who post fraudulent job listings that appear legitimate. Such scams often aim to steal personal information, collect upfront payments, or conduct identity theft, resulting in significant financial and emotional harm to job seekers. As the volume of online job postings continues to grow, manually identifying fraudulent listings becomes increasingly challenging. Additionally, scammers continuously adapt their language and tactics, making rule-based detection methods ineffective. This highlights the need for automated, data-driven approaches to fraud detection.
-
+  
 This project leverages Natural Language Processing (NLP), machine learning, and Large Language Model (LLM) embeddings to automatically identify fake job postings. By analyzing both textual content—such as job descriptions and requirements—and structured metadata like company logos and employment details, the system learns patterns that distinguish real postings from fraudulent ones. The use of LLM embeddings enables deeper semantic understanding of job text, improving detection accuracy. Overall, the approach provides a scalable and practical solution to enhance trust and safety in online recruitment platforms.
 
-## Why This Problem Matters
-
-Prevents identity theft and financial loss
-
-Protects job seekers from scams
-
-Helps job portals auto-flag suspicious listings
-
-Improves trust in online recruitment ecosystems
-
-## Research Questions
-
-Can fake job postings be accurately classified using ML and NLP?
-
-Do LLM embeddings outperform TF-IDF?
-
-Which machine learning model performs best?
-
-What textual/metadata features best indicate fraud?
+  ### Why This Problem Matters
+  
+  Prevents identity theft and financial loss
+  
+  Protects job seekers from scams
+  
+  Helps job portals auto-flag suspicious listings
+  
+  Improves trust in online recruitment ecosystems
+  
+  ### Research Questions
+  
+  Can fake job postings be accurately classified using ML and NLP?
+  
+  Do LLM embeddings outperform TF-IDF?
+  
+  Which machine learning model performs best?
+  
+  What textual/metadata features best indicate fraud?
 
 # 3. Data
 
