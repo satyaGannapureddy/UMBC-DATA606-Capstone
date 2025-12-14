@@ -288,7 +288,7 @@ Overall, this comparison confirms that LLM embeddings significantly improve the 
 
 # 6. Application of the Trained Model
 
-## 6.1 Streamlit Web App
+##  Streamlit Web App
 To make the fraud detection system practical and easy to use, a real-time web application was developed using Streamlit. The application allows users to interact directly with the trained LLM + XGBoost model and receive instant predictions on whether a job posting is likely to be fraudulent.
 
 The app supports single job predictions through a user-friendly form interface. Users can enter key job-related information such as location, department, salary range, employment type, and the full job description text. Additional metadata fields like telecommuting status, presence of a company logo, and screening questions can also be selected. Once the user clicks the Predict button, the input text is preprocessed and converted into LLM embeddings, combined with encoded metadata, and passed to the trained XGBoost classifier.
