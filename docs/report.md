@@ -170,7 +170,7 @@ Below are the visualizations included as part of EDA:
 #### Class Imbalance
 
 
-<img src="docs/images/class imblance.png">
+<img src="images/class imblance.png">
 
 
 Fake postings make up only about 4.8% of all listings, indicating a strong class imbalance that requires oversampling (SMOTE).
