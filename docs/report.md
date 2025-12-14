@@ -334,17 +334,22 @@ This project highlighted several important lessons in applied machine learning. 
 
 Future work could focus on incorporating transformer-based models such as BERT or RoBERTa for deeper semantic understanding of job descriptions. Adding model explainability tools like SHAP or LIME would improve transparency and trust in predictions. Deploying the system as a REST API would enable easier integration with job portals and external applications. Expanding the dataset through live job scraping and supporting multilingual job postings would further enhance the system’s robustness and real-world impact.
 
-# 8. References
 
 ## 8. References
 
-- scikit-learn Documentation  
-- Streamlit Documentation  
-- Plotly Express Documentation  
-- SentenceTransformers Documentation  
-- XGBoost Documentation  
-- Kaggle – Real or Fake Job Posting Dataset  
-- Python pandas Documentation  
-- NLTK Documentation  
-- spaCy Documentation  
+## 8. References
+
+- [scikit-learn Documentation](https://scikit-learn.org/stable/)
+- [Streamlit Documentation](https://docs.streamlit.io/)
+- [Plotly Express Documentation](https://plotly.com/python/plotly-express/)
+- [SentenceTransformers Documentation](https://www.sbert.net/)
+- [XGBoost Documentation](https://xgboost.readthedocs.io/)
+- [imbalanced-learn Documentation](https://imbalanced-learn.org/stable/)
+- [Kaggle – Real or Fake Job Posting Dataset](https://www.kaggle.com/datasets/shivamb/real-or-fake-fake-jobposting-prediction)
+- [pandas Documentation](https://pandas.pydata.org/docs/)
+- [NLTK Documentation](https://www.nltk.org/)
+- [spaCy Documentation](https://spacy.io/usage)
+
+
+
 
