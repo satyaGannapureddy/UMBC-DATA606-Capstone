@@ -7,15 +7,14 @@ Instructor: Dr. Chaojie (Jay) Wang
 Author: Charan Naga Sri Sai Satya Gannapureddy
 GitHub Repo: https://github.com/satyaGannapureddy/UMBC-DATA606-Capstone
 
-# 1. Title and Author
 
-## Fake Job Posting Detection Using NLP and Machine Learning
+# Fake Job Posting Detection Using NLP and Machine Learning
 
 Charan Naga Sri Sai Satya Gannapureddy
 
 GitHub Repository: https://github.com/satyaGannapureddy/UMBC-DATA606-Capstone
 
-LinkedIn: add your link
+LinkedIn: https://www.linkedin.com/in/satya-gannapureddy/
 
 PowerPoint Presentation: add link
 
