@@ -299,7 +299,7 @@ The model outputs both a binary classification (Fraudulent / Not Fraudulent) and
 
 After prediction, the application displays the result prominently, highlighting whether the job posting is considered fraudulent. A confidence score (fraud probability) is also shown, helping users understand how strongly the model believes in its prediction. The model configuration used for prediction—LLM embeddings (MiniLM-L6-v2) combined with XGBoost—is clearly mentioned for transparency.
 
-<img src="docs/marco F1.png"> 
+<img src="images/streamlit-2.png"> 
 
 ## 6.2 Use Cases
 
