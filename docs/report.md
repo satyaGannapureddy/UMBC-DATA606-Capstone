@@ -337,8 +337,6 @@ Future work could focus on incorporating transformer-based models such as BERT o
 
 ## 8. References
 
-## 8. References
-
 - [scikit-learn Documentation](https://scikit-learn.org/stable/)
 - [Streamlit Documentation](https://docs.streamlit.io/)
 - [Plotly Express Documentation](https://plotly.com/python/plotly-express/)
