@@ -17,7 +17,7 @@ GitHub Repository: https://github.com/satyaGannapureddy/UMBC-DATA606-Capstone
 
 LinkedIn: https://www.linkedin.com/in/satya-gannapureddy/
 
-PowerPoint Presentation: add link
+PowerPoint Presentation: docs/DATA 606 PPT.pptx
 
 YouTube Presentation: add link
 
