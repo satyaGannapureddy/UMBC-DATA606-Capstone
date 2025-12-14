@@ -29,23 +29,23 @@ This project leverages Natural Language Processing (NLP), machine learning, and 
 
   ### Why This Problem Matters
   
-  1.Prevents identity theft and financial loss
+  1. Prevents identity theft and financial loss
   
-  2.Protects job seekers from scams
+  2. Protects job seekers from scams
   
-  3.Helps job portals auto-flag suspicious listings
+  3. Helps job portals auto-flag suspicious listings
   
-  4.Improves trust in online recruitment ecosystems
+  4. Improves trust in online recruitment ecosystems
   
   ### Research Questions
   
-  1.Can fake job postings be accurately classified using ML and NLP?
+  1. Can fake job postings be accurately classified using ML and NLP?
   
-  2.Do LLM embeddings outperform TF-IDF?
+  2. Do LLM embeddings outperform TF-IDF?
   
-  3.Which machine learning model performs best?
+  3. Which machine learning model performs best?
   
-  4.What textual/metadata features best indicate fraud?
+  4. What textual/metadata features best indicate fraud?
 
 # 3. Data
 
