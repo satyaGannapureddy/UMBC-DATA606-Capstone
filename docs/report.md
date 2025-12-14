@@ -23,9 +23,7 @@ YouTube Presentation: add link
 
 # 2. Background
 
-Online job portals such as LinkedIn, Indeed, and Naukri are increasingly targeted by scammers who post fraudulent job listings. These scams steal personal information or money and cause significant harm to job seekers.
-
-This project uses NLP, Machine Learning, and LLM embeddings to automatically detect fraudulent job postings by analyzing text and metadata.
+Online job portals such as LinkedIn, Indeed, and Naukri are increasingly being targeted by scammers who post fraudulent job listings. These fake postings are often used to steal personal information, demand payments, or carry out identity theft, causing serious harm to job seekers. With the rapid growth of online hiring platforms, manually identifying such scams has become difficult and inefficient. Many fraudulent postings closely resemble legitimate jobs, making detection even more challenging. This project uses Natural Language Processing (NLP), machine learning, and LLM embeddings to automatically identify fraudulent job postings by analyzing both text content and job-related metadata.
 
 ## Why This Problem Matters
 
