@@ -49,7 +49,7 @@ This project leverages Natural Language Processing (NLP), machine learning, and 
 
 # 3. Data
 
-## 3.1 Data Source
+###  Data Source
 
 Dataset: Real or Fake Job Posting Prediction
 
@@ -57,7 +57,7 @@ Source: Kaggle
 
 Link: https://www.kaggle.com/shivamb/real-or-fake-fake-jobposting-prediction
 
-## 3.2 Dataset Description
+###  Dataset Description
 
 Size: ~17 MB
 
@@ -65,7 +65,7 @@ Shape: 17,880 rows × 18 columns
 
 Unit of Observation: Each row represents one job posting
 
-## 3.3 Data Structure
+###  Data Structure
 
 Includes:
 
@@ -77,7 +77,7 @@ Binary metadata: telecommuting, has_company_logo, has_questions
 
 Target label: fraudulent (1 = fake posting)
 
-## 3.4 Data Dictionary (Key Variables)
+###  Data Dictionary (Key Variables)
 | **Column Name**      | **Type**     | **Description**                                     |
 | -------------------- | ------------ | --------------------------------------------------- |
 | **title**            | text         | Job title                                           |
