@@ -234,7 +234,7 @@ To develop a reliable system for detecting fake job postings, multiple machine l
 
 The implementation relied on Python libraries including scikit-learn, NLTK, spaCy, XGBoost, pandas, NumPy, and Matplotlib, with all development conducted in a local Jupyter Notebook environment. While TF-IDF-based models showed reasonable performance, they struggled to accurately detect the minority class of fraudulent postings. To address this limitation, the modeling pipeline was extended using SentenceTransformer embeddings (all-MiniLM-L6-v2). These embeddings generate dense, 384-dimensional vectors that capture deeper semantic relationships in the text, resulting in improved model performance compared to traditional TF-IDF features.
 
-#### Comparison of Model Accuracies (TF-IDF Models)
+### Comparison of Model Accuracies (TF-IDF Models)
 
 
 <img src="images/model accuarices.png">
@@ -242,13 +242,13 @@ The implementation relied on Python libraries including scikit-learn, NLTK, spaC
 
 The bar chart shows how five traditional machine learning models performed when trained using TF-IDF features. There is a noticeable difference between the simpler models and the more advanced ones. Naive Bayes clearly struggles, reaching only about 39% accuracy, which suggests that it cannot capture the complexity and variability of job-posting text.
 
-The other models — KNN, Logistic Regression, Random Forest, and XGBoost — perform much better, all landing in the 85% to 89% accuracy range. Among them, Random Forest (0.895) and KNN (0.893) come out on top, with Logistic Regression and XGBoost close behind. These results show that traditional ML models can learn meaningful patterns from the text, but they still face challenges.
+The other models like KNN, Logistic Regression, Random Forest, and XGBoost perform much better, all landing in the 85% to 89% accuracy range. Among them, Random Forest (0.895) and KNN (0.893) come out on top, with Logistic Regression and XGBoost close behind. These results show that traditional ML models can learn meaningful patterns from the text, but they still face challenges.
 
 Even though the accuracies look relatively high, the dataset is highly imbalanced, with real postings vastly outnumbering fake ones. Because of this imbalance, accuracy alone doesn’t tell the whole story. Many of these models still miss a large portion of fraudulent postings, which becomes clearer when we look at recall and F1-scores later.
 
-Overall, this comparison highlights that while TF-IDF models perform reasonably well on surface-level accuracy, more advanced text representations — such as LLM-based embeddings — are necessary to truly improve the detection of fake job postings.
+Overall, this comparison highlights that while TF-IDF models perform reasonably well on surface-level accuracy, more advanced text representations such as LLM-based embeddings are necessary to truly improve the detection of fake job postings.
 
-##### Confusion Matrix Components Comparison (TF-IDF Models)
+### Confusion Matrix Components Comparison (TF-IDF Models)
 
 
 <img src="images/Confusion matrix.png">
@@ -261,7 +261,7 @@ The other models—KNN, Logistic Regression, Random Forest, and XGBoost—show m
 
 Among the TF-IDF models, XGBoost and Logistic Regression strike the best balance, showing relatively higher true positive counts and fewer false negatives compared to the others. Still, the chart makes it clear that all traditional models struggle with identifying fraud effectively, reinforcing the need for improved text representations—such as LLM embeddings—to boost fraud detection performance.
 
-##### Accuracy by Model (LLM Embeddings)
+### Accuracy by Model (LLM Embeddings)
 
 
 <img src="images/accuracy by model.png">
@@ -272,7 +272,7 @@ Compared to the earlier TF-IDF models, which topped out around 89%, this represe
 
 While accuracy alone doesn't tell the full story—especially in an imbalanced dataset—this plot demonstrates how switching to LLM-based features significantly enhances the model's overall predictive capability. The consistently high accuracy across all three models also shows that embedding-based representations provide a strong universal foundation, regardless of the classifier used.
 
-##### Macro-F1 by Model (LLM Embeddings)
+### Macro-F1 by Model (LLM Embeddings)
 
 
 <img src="images/marco F1.png"> 
@@ -316,9 +316,9 @@ Overall, the Streamlit application bridges the gap between model development and
 # 7. Conclusion
 ### Project Summary & Impact
 
-This project focused on detecting fraudulent job postings using machine learning and natural language processing techniques. By analyzing both textual job descriptions and structured metadata, the study demonstrated that machine learning models can effectively distinguish between real and fake job postings. While traditional TF-IDF–based models achieved reasonable accuracy, they struggled with identifying fraudulent postings due to strong class imbalance.
+This project aimed to identify fraudulent job postings using machine learning and natural language processing techniques. By examining both the text of job descriptions and structured metadata, the analysis showed that machine learning models can successfully differentiate between legitimate and fake job postings. Although traditional TF-IDF–based models performed reasonably well, they had difficulty accurately detecting fraudulent postings, largely due to the imbalance between real and fake listings in the dataset.
 
-The introduction of LLM-based embeddings significantly improved model performance by capturing deeper semantic meaning in job descriptions. Among all approaches tested, XGBoost combined with LLM embeddings produced the strongest and most balanced results, achieving high accuracy and Macro-F1 scores. The final Streamlit application further translated this model into a practical tool that allows users to assess job postings in real time, helping protect job seekers, educational institutions, and recruiting platforms from online scams.
+To address this limitation, LLM-based embeddings were introduced, which significantly improved the model’s ability to understand the semantic context of job descriptions. Among all the approaches tested, the combination of XGBoost with LLM embeddings delivered the most reliable and balanced performance, achieving high accuracy and strong Macro-F1 scores. The development of a Streamlit web application further transformed the model into a practical tool, allowing users to evaluate job postings in real time and helping protect job seekers, educational institutions, and recruiting platforms from online scams.
 
 ### Limitations
 
