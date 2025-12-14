@@ -301,7 +301,7 @@ After prediction, the application displays the result prominently, highlighting 
 
 <img src="images/streamlit-2.png"> 
 
-## 6.2 Use Cases
+##  Use Cases
 
 This application demonstrates how machine learning models can be translated into real-world tools with meaningful impact. Potential use cases include:
 
@@ -316,21 +316,21 @@ Job seekers: Independently check the authenticity of job postings before applyin
 Overall, the Streamlit application bridges the gap between model development and real-world usability, showcasing how advanced NLP and machine learning techniques can be deployed as an accessible and practical solution for fraud detection.
 
 # 7. Conclusion
-### 7.1 Project Summary & Impact
+### Project Summary & Impact
 
 This project focused on detecting fraudulent job postings using machine learning and natural language processing techniques. By analyzing both textual job descriptions and structured metadata, the study demonstrated that machine learning models can effectively distinguish between real and fake job postings. While traditional TF-IDF–based models achieved reasonable accuracy, they struggled with identifying fraudulent postings due to strong class imbalance.
 
 The introduction of LLM-based embeddings significantly improved model performance by capturing deeper semantic meaning in job descriptions. Among all approaches tested, XGBoost combined with LLM embeddings produced the strongest and most balanced results, achieving high accuracy and Macro-F1 scores. The final Streamlit application further translated this model into a practical tool that allows users to assess job postings in real time, helping protect job seekers, educational institutions, and recruiting platforms from online scams.
 
-### 7.2 Limitations
+### Limitations
 
 Despite its strong performance, this project has several limitations. The dataset used may not fully reflect modern or evolving scam strategies, as fraudulent job postings continuously adapt to bypass detection systems. Additionally, the analysis was restricted to English-language postings, limiting its applicability to global job markets. Computational constraints also prevented fine-tuning large transformer models such as BERT or RoBERTa, which may have yielded further improvements in performance.
 
-### 7.3 Lessons Learned
+### Lessons Learned
 
 This project highlighted several important lessons in applied machine learning. Handling class imbalance using techniques such as SMOTE was critical for improving fraud detection performance. The results clearly demonstrated the advantages of LLM embeddings over traditional TF-IDF representations for text-heavy classification tasks. Careful text preprocessing and feature engineering played a major role in model reliability, and deploying the final model using Streamlit showed how quickly machine learning research can be converted into a usable, real-world application.
 
-### 7.4 Future Directions
+### Future Directions
 
 Future work could focus on incorporating transformer-based models such as BERT or RoBERTa for deeper semantic understanding of job descriptions. Adding model explainability tools like SHAP or LIME would improve transparency and trust in predictions. Deploying the system as a REST API would enable easier integration with job portals and external applications. Expanding the dataset through live job scraping and supporting multilingual job postings would further enhance the system’s robustness and real-world impact.
 
