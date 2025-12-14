@@ -170,7 +170,7 @@ Below are the visualizations included as part of EDA:
 #### Class Imbalance
 
 
-<img src="docs/class imblance.png">
+<img src="docs/images/class imblance.png">
 
 
 Fake postings make up only about 4.8% of all listings, indicating a strong class imbalance that requires oversampling (SMOTE).
@@ -178,7 +178,7 @@ Fake postings make up only about 4.8% of all listings, indicating a strong class
 #### Binary Metadata Distributions
 
 
-<img src="docs/meta data distributions.png">
+<img src="docs/images/meta data distributions.png">
 
 
 These plots show that fake postings rarely include company logos and often skip screening questions, whereas legitimate postings usually provide them.
@@ -186,7 +186,7 @@ These plots show that fake postings rarely include company logos and often skip 
 #### Job Function Distribution
 
 
-<img src="docs/Job Function Distribution.png">
+<img src="docs/images/Job Function Distribution.png">
 
 
 The majority of postings belong to “Unknown” or broad categories like IT and Sales; many categories appear infrequently.
@@ -194,7 +194,7 @@ The majority of postings belong to “Unknown” or broad categories like IT and
 #### Correlation Heatmap
 
 
-<img src="docs/heatmap.png">
+<img src="docs/images/heatmap.png">
 
 
 The heatmap shows that has_company_logo has a noticeable negative correlation with fraud, while has_questions has a slight positive association with real postings.
@@ -210,7 +210,7 @@ Most postings originate from the US, followed by GB and GR; other countries appe
 #### Word Count in Job Descriptions
 
 
-<img src="docs/Word Count in Job Descriptions.png">
+<img src="docs/images/Country Distribution.png">
 
 
 Real postings generally contain longer descriptions compared to fake postings, which helps models differentiate them.
@@ -218,7 +218,7 @@ Real postings generally contain longer descriptions compared to fake postings, w
 #### Character Count in Job Descriptions
 
 
-<img src="docs/Character Count in Job Descriptions.png">
+<img src="docs/images/Character Count in Job Descriptions.png">
 
 
 Real postings show a wide spread of character counts, while fake postings cluster at low values.
@@ -226,7 +226,7 @@ Real postings show a wide spread of character counts, while fake postings cluste
 #### Word Cloud of Common Terms
 
 
-<img src="docs/word count.png">
+<img src="docs/images/word count.png">
 
 
 The word cloud reveals recurring words such as communication, experience, customer service, and full time, suggesting typical job-related terminology.
@@ -239,7 +239,7 @@ Python libraries including scikit-learn, NLTK, spaCy, XGBoost, pandas, NumPy, an
 ##### Comparison of Model Accuracies (TF-IDF Models)
 
 
-<img src="docs/model accuarices.png">
+<img src="docs/images/model accuarices.png">
 
 
 The bar chart shows how five traditional machine learning models performed when trained using TF-IDF features. There is a noticeable difference between the simpler models and the more advanced ones. Naive Bayes clearly struggles, reaching only about 39% accuracy, which suggests that it cannot capture the complexity and variability of job-posting text.
@@ -253,7 +253,7 @@ Overall, this comparison highlights that while TF-IDF models perform reasonably 
 ##### Confusion Matrix Components Comparison (TF-IDF Models)
 
 
-<img src="docs/Confusion matrix.png">
+<img src="docs/images/Confusion matrix.png">
 
 This chart provides a deeper look at how each TF-IDF model performs by breaking down the confusion matrix components: true positives (TP), false positives (FP), true negatives (TN), and false negatives (FN). This view is especially important for fraud detection because accuracy alone can hide how poorly a model identifies the minority class.
 
@@ -266,7 +266,7 @@ Among the TF-IDF models, XGBoost and Logistic Regression strike the best balance
 ##### Accuracy by Model (LLM Embeddings)
 
 
-<img src="docs/accuracy by model.png">
+<img src="docs/images/accuracy by model.png">
 
 This chart compares the accuracy of three machine learning models—XGBoost, Random Forest, and Logistic Regression—after replacing traditional TF-IDF features with LLM-generated embeddings (MiniLM-L6-v2). The improvement is immediately visible. All three models achieve accuracy scores above 96%, with LLM + XGBoost performing the best at 97.5%.
 
@@ -277,7 +277,7 @@ While accuracy alone doesn't tell the full story—especially in an imbalanced d
 ##### Macro-F1 by Model (LLM Embeddings)
 
 
-<img src="docs/marco F1.png"> 
+<img src="docs/images/marco F1.png"> 
 
 The Macro-F1 chart provides a more meaningful comparison of model performance on this imbalanced dataset by averaging the F1-scores of both classes equally. Unlike accuracy, which can appear high even when the model fails on the minority class, the Macro-F1 score highlights how well each model balances precision and recall for both real and fraudulent job postings.
 
