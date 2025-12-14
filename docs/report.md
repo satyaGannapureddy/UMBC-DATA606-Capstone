@@ -165,7 +165,7 @@ Text preprocessing included lowercasing, removing punctuation, removing stopword
 
 Below are the visualizations included as part of EDA:
 
-#### Class Imbalance
+### Class Imbalance
 
 
 <img src="images/class imblance.png">
@@ -173,7 +173,7 @@ Below are the visualizations included as part of EDA:
 
 Fake postings make up only about 4.8% of all listings, indicating a strong class imbalance that requires oversampling (SMOTE).
 
-#### Binary Metadata Distributions
+### Binary Metadata Distributions
 
 
 <img src="images/meta data distributions.png">
@@ -181,7 +181,7 @@ Fake postings make up only about 4.8% of all listings, indicating a strong class
 
 These plots show that fake postings rarely include company logos and often skip screening questions, whereas legitimate postings usually provide them.
 
-#### Job Function Distribution
+### Job Function Distribution
 
 
 <img src="images/Job Function Distribution.png">
@@ -189,7 +189,7 @@ These plots show that fake postings rarely include company logos and often skip 
 
 The majority of postings belong to “Unknown” or broad categories like IT and Sales; many categories appear infrequently.
 
-#### Correlation Heatmap
+### Correlation Heatmap
 
 
 <img src="images/heatmap.png">
@@ -197,7 +197,7 @@ The majority of postings belong to “Unknown” or broad categories like IT and
 
 The heatmap shows that has_company_logo has a noticeable negative correlation with fraud, while has_questions has a slight positive association with real postings.
 
-#### Country Distribution
+### Country Distribution
 
 
 <img src="images/Country Distribution.png">
@@ -205,7 +205,7 @@ The heatmap shows that has_company_logo has a noticeable negative correlation wi
 
 Most postings originate from the US, followed by GB and GR; other countries appear sparsely.
 
-#### Word Count in Job Descriptions
+### Word Count in Job Descriptions
 
 
 <img src="images/Country Distribution.png">
@@ -213,7 +213,7 @@ Most postings originate from the US, followed by GB and GR; other countries appe
 
 Real postings generally contain longer descriptions compared to fake postings, which helps models differentiate them.
 
-#### Character Count in Job Descriptions
+### Character Count in Job Descriptions
 
 
 <img src="images/Character Count in Job Descriptions.png">
@@ -221,7 +221,7 @@ Real postings generally contain longer descriptions compared to fake postings, w
 
 Real postings show a wide spread of character counts, while fake postings cluster at low values.
 
-#### Word Cloud of Common Terms
+### Word Cloud of Common Terms
 
 
 <img src="images/word count.png">
