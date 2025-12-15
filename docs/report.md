@@ -19,7 +19,7 @@ LinkedIn: https://www.linkedin.com/in/satya-gannapureddy/
 
 PowerPoint Presentation: https://github.com/satyaGannapureddy/UMBC-DATA606-Capstone/blob/main/docs/DATA%20606%20PPT.pptx
 
-YouTube Presentation: add link
+YouTube Presentation: https://youtu.be/HhsA_x1XT0M?si=-XJ6HYemalibhxHk
 
 # 2. Background
 
