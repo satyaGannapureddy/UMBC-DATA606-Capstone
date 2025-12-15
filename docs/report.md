@@ -13,8 +13,6 @@ Semester: Fall 2025
 
 # Fake Job Posting Detection Using NLP and Machine Learning
 
-Charan Naga Sri Sai Satya Gannapureddy
-
 GitHub Repository: https://github.com/satyaGannapureddy/UMBC-DATA606-Capstone
 
 LinkedIn: https://www.linkedin.com/in/satya-gannapureddy/
