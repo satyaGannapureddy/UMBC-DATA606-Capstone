@@ -8,6 +8,8 @@ Instructor: Dr. Chaojie (Jay) Wang
 
 Author: Charan Naga Sri Sai Satya Gannapureddy
 
+Semester: Fall 2025
+
 
 # Fake Job Posting Detection Using NLP and Machine Learning
 
